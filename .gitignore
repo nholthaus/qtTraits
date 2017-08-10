@@ -1,3 +1,7 @@
+# Output directories
+build/
+msvc*/
+
 # Prerequisites
 *.d
 
