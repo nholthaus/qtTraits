@@ -1,0 +1,10 @@
+﻿  Checking Build System
+  CMake does not need to re-run because E:/workspace/qtTraits/msvc2017/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because E:/workspace/qtTraits/msvc2017/3rdParty/gtest/CMakeFiles/generate.stamp is up-to-date.
+  CMake is re-running because E:/workspace/qtTraits/msvc2017/unitTests/CMakeFiles/generate.stamp is out-of-date.
+    the file 'E:/workspace/qtTraits/unitTests/CMakeLists.txt'
+    is newer than 'E:/workspace/qtTraits/msvc2017/unitTests/CMakeFiles/generate.stamp.depend'
+    result='-1'
+  -- Configuring done
+  -- Generating done
+  -- Build files have been written to: E:/workspace/qtTraits/msvc2017
