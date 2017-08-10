@@ -18,19 +18,16 @@ namespace
 
 TEST_F(QtTraits, is_qenum)
 {
-	qDebug() << "TEST";
-//	qDebug() << decltype(QVariant::fromValue(TestObject::isQenumClass{}));
-//	qDebug() << decltype(QVariant::fromValue(TestObject::isNotQenum{}));
-//	qDebug() << decltype(QVariant::fromValue(TestObject::isNotQenumClass{}).toString());
-	EXPECT_TRUE(qt_traits::is_qenum<TestObject::isQenumClass>::value);
-	EXPECT_TRUE(qt_traits::is_qenum<TestObject::isQenum>::value);
-	EXPECT_FALSE(qt_traits::is_qenum<TestObject::isNotQenumClass>::value);
-	EXPECT_FALSE(qt_traits::is_qenum<TestObject::isNotQenum>::value);
-	EXPECT_FALSE(qt_traits::is_qenum<int>::value);
+	EXPECT_TRUE(qt_traits::is_qenum_v<TestObject::isQenumClass>);
+	EXPECT_TRUE(qt_traits::is_qenum_v<TestObject::isQenum>);
+	EXPECT_FALSE(qt_traits::is_qenum_v<TestObject::isNotQenumClass>);
+	EXPECT_FALSE(qt_traits::is_qenum_v<TestObject::isNotQenum>);
+	EXPECT_FALSE(qt_traits::is_qenum_v<int>);
 }
 
 int main(int argc, char* argv[])
 {
+	qDebug() << "Qt Traits testing"; //"This is so it doesn't complain that the test is not a Qt executable";
 	::testing::InitGoogleTest(&argc, argv);
 	return RUN_ALL_TESTS();
 }
